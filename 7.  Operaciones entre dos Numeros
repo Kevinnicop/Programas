@@ -1,0 +1,22 @@
+import java.util.Scanner; 
+public class OperacionesEntreDosNumeros{
+    public static void main(String[] args) { 
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Ingresa el primer numero: ");
+       int a = sc.nextInt();
+       System.out.print("Ingresa el segundo numero: ");
+       int b = sc.nextInt();
+       int suma = a+b;
+       int resta =a-b;
+       int prod = a*b;
+       int div = a/b;
+       int res = a%b;
+       int pot =(int) Math.pow(a,b);
+       System.out.println("suma: "+suma);
+       System.out.println("Resta: "+resta);
+       System.out.println("Producto: "+prod);
+       System.out.println("Division: "+div);
+       System.out.println("Modulo o residuo: "+res);
+       System.out.println("Potencias: "+pot);
+    } 
+} 

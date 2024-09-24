@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class CambioDeDosNumeros {
+public static void main(String[] args) {
+    System.out.println("Ingrese 2 numeros... ");
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Ingrese el valor de a: ");
+    int a = sc.nextInt();
+    System.out.println("Ingrese el valor de b: ");
+    int b = sc.nextInt();
+    int aux = a;
+    a=b;
+    b=aux;
+    System.out.println("Valor de a: "+a);
+    System.out.println("Valor de b: "+b);
+}}

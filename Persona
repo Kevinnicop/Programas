@@ -1,0 +1,34 @@
+public class Persona { 
+ String nombre; 
+ int edad; 
+ double peso; 
+ double altura; 
+ String colorDePiel; 
+ String religion;     
+ public Persona(String nombre, int edad, double peso, double altura, String colorDePiel, String religion) { 
+     this.nombre = nombre; 
+     this.edad = edad; 
+     this.peso = peso; 
+     this.altura = altura; 
+     this.colorDePiel = colorDePiel; 
+     this.religion = religion; 
+ } 
+ public void mostrarInformacion() { 
+     System.out.println("Nombre: " + nombre); 
+     System.out.println("Edad: " + edad + " anos"); 
+     System.out.println("Peso: " + peso + " kg"); 
+     System.out.println("Altura: " + altura + " cm"); 
+     System.out.println("Color de piel: " + colorDePiel); 
+     System.out.println("Religion: " + religion); 
+     System.out.println(); 
+ } 
+ public static void main(String[] args) { 
+     Persona mujer = new Persona("Ana", 30, 65.5, 165, "Blanca", "Cristianismo"); 
+     Persona hombre1 = new Persona("Luis", 25, 75.0, 180, "Mestizo", "Catolicismo"); 
+     Persona hombre2 = new Persona("Carlos", 40, 85.0, 175, "Negra", "Protestantismo");
+     Persona hombre3 = new Persona("Kevin", 23, 58.5, 170, "Perez", "Solo Gsus");
+     mujer.mostrarInformacion();
+     hombre1.mostrarInformacion(); 
+     hombre2.mostrarInformacion(); 
+     hombre3.mostrarInformacion();
+ } 

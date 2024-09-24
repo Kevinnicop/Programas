@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Promedio {
+public static void main(String[] args) {
+    System.out.println("Ingrese 4 numeros: ");
+    Scanner sc = new Scanner(System.in);
+    float a = sc.nextFloat();
+    float b = sc.nextFloat();
+    float c = sc.nextFloat();
+    float d = sc.nextFloat();
+    float prom = (a+b+c+d)/4;
+    System.out.println("Promedio: "+prom);
+}}

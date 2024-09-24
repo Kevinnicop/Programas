@@ -1,0 +1,9 @@
+public class Arreglos {
+    public static void main(String[] args) {
+        String[] nombres = {"Alice", "Bob", "Charlie"};
+        System.out.println("Nombres en arreglo: ");
+        for (String nombre : nombres)  {
+            System.out.println(nombre);
+        }
+    }
+}

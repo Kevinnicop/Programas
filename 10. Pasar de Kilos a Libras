@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class PasarDeKgALb {
+public static void main(String[] args) {
+    System.out.println("Ingresar cantidad en Kg.: ");
+    Scanner sc = new Scanner(System.in);
+    float kilos = sc.nextFloat();
+    float libras = (float) (kilos * 2.20452262);
+    System.out.println(kilos + " kg. =  " +libras + " lib.");
+ 
+}}

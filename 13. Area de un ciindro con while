@@ -1,0 +1,37 @@
+import java.util.Scanner; 
+
+public class AreaDeCilindro { 
+
+    public static void main(String[] args) { 
+
+    Scanner sc = new Scanner(System.in); 
+
+     String respuesta; 
+
+    do { 
+
+        System.out.print("ingrese el radio del cilindro: "); 
+
+        double radio = sc.nextDouble(); 
+
+        System.out.print("ingrese la altura del cilindro: "); 
+
+        double h = sc.nextDouble(); 
+
+        double area = 2*Math.PI*radio*(radio+h); 
+
+        System.out.println("El area del cilindro es: "+area); 
+
+        System.out.println("Quieres calcular el area de otro circulo? (si/no)"); 
+
+        respuesta = sc.next(); 
+
+} while (respuesta.equalsIgnoreCase("si")); 
+
+  
+
+    System.out.println("Gracias, hasta la proxima."); 
+
+         
+
+    }} 

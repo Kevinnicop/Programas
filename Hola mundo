@@ -1,0 +1,11 @@
+public class HolaMundo { 
+    public static void main(String[] args) { 
+        System.out.println("********************************");
+        System.out.println("Hola Kevin Perez");
+        System.out.println("Estamos en clase de programacion");
+        System.out.println("Nuestro primer programa de 199");
+        System.out.println("Este es el programa es el 1 y se llama hola mundo ");
+        System.out.println("************************");
+        System.out.printf("************************************");
+    } 
+} 

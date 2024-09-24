@@ -1,0 +1,54 @@
+import java.util.Scanner; 
+public class Calculadora { 
+    public static void main(String[] args) { 
+        Scanner scanner = new Scanner(System.in); 
+        int operacion; 
+        double numero1, numero2; 
+        double resultado;
+        do { 
+            System.out.println("Selecciona una operacion:"); 
+            System.out.println("1. Sumar"); 
+            System.out.println("2. Restar"); 
+            System.out.println("3. Multiplicar"); 
+            System.out.println("4. Dividir"); 
+            System.out.println("5. Salir"); 
+        System.out.print("Selecciona el numero de la operacion deseada: "); 
+            operacion = scanner.nextInt(); 
+            if (operacion == 5) { 
+                System.out.println("Saliendo del programa..."); 
+                break; 
+            } 
+            System.out.print("Ingresa el primer numero: "); 
+            numero1 = scanner.nextDouble(); 
+            System.out.print("Ingresa el segundo numero: "); 
+            numero2 = scanner.nextDouble(); 
+            switch (operacion) { 
+                case 1:
+                    resultado = numero1 + numero2; 
+                    System.out.println("El resultado de la suma es: " + resultado); 
+                    break; 
+                case 2:
+                    resultado = numero1 - numero2; 
+                    System.out.println("El resultado de la resta es: " + resultado); 
+                    break; 
+                case 3: 
+                    resultado = numero1 * numero2; 
+                    System.out.println("El resultado de la multiplicacion es: " + resultado); 
+                    break; 
+                case 4: 
+                    if (numero2 != 0) { 
+                        resultado = numero1 / numero2; 
+                        System.out.println("El resultado de la division es: " + resultado); 
+                    } else { 
+                        System.out.println("Error: No se puede dividir por cero."); 
+                    } 
+                    break; 
+                default: 
+                    System.out.println("Opcion invalida. Por favor selecciona una opcion entre 1 y 5."); 
+                    break; 
+            } 
+        } while (operacion != 5); 
+
+        scanner.close(); 
+
+    } 

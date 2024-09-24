@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Hipotenusa {
+public static void main(String[] args) {
+    System.out.println("Ingrese el valor del radio del circulo: ");
+    Scanner sc = new Scanner(System.in);
+    double radio = sc.nextDouble();
+    double area = Math.PI * Math.pow(radio, 2);
+    System.out.println("El area del circulo es : " +area);
+ 
+}}

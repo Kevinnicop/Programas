@@ -1,0 +1,35 @@
+import java.util.Scanner; 
+
+ 
+
+public class Triangulo { 
+
+    public static void main(String[] args) { 
+
+        Scanner scanner = new Scanner(System.in); 
+
+        System.out.print("Ingrese el lado a: "); 
+
+        int a = scanner.nextInt(); 
+
+        System.out.print("Ingrese el lado b: "); 
+
+        int b = scanner.nextInt(); 
+
+        System.out.print("Ingrese el lado c: "); 
+
+        int c = scanner.nextInt(); 
+
+        if (a + b > c && a + c > b && b + c > a) { 
+
+            System.out.println("Los lados pueden formar un triángulo."); 
+
+        } else { 
+
+            System.out.println("Los lados no pueden formar un triángulo."); 
+
+        } 
+
+    } 
+
+} 

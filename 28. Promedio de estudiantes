@@ -1,0 +1,32 @@
+import java.util.Scanner; 
+
+ 
+
+public class PromedioEstudiantes { 
+
+    public static void main(String[] args) { 
+
+        Scanner scanner = new Scanner(System.in); 
+
+        System.out.print("Ingrese el numero de estudiantes: "); 
+
+        int n = scanner.nextInt(); 
+
+        double suma = 0; 
+
+        for (int i = 1; i <= n; i++) { 
+
+            System.out.print("Ingrese la calificacion del estudiante " + i + ": "); 
+
+            double calificacion = scanner.nextDouble(); 
+
+            suma += calificacion; 
+
+        } 
+
+        double promedio = suma / n; 
+
+        System.out.println("El promedio es: " + promedio); 
+
+    } 
+}

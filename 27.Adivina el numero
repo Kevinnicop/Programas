@@ -10,9 +10,9 @@ public class AdivinaElNumero {
         do { 
             System.out.print("Adivina el numero (entre 1 y 100): ");
             intento = scanner.nextInt();
-            if (intento < numeroSecreto) {
+            if (intento > numeroSecreto) {
                 System.out.println("El numero es menor");
-            } else if (intento > numeroSecreto) {
+            } else if (intento < numeroSecreto) {
                 System.out.println("El numero es mayor");
             }
             

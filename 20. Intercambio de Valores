@@ -1,0 +1,15 @@
+public class intercambiovalores {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+        int c = a + b;
+        System.out.println("Antes del intercambio: " + a + " " + b);
+        int temp = a;
+        a = b;
+        b = temp;
+        System.out.println("Despues del intercambio: " + a + " " + b);      
+        
+    }
+
+        
+}

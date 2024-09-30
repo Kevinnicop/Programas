@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class InversoNumero {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese su numero: ");
+        int numero = scanner.nextInt();
+        int inverso = 0;  
+        while (numero != 0) {
+            inverso = inverso * 10 + numero % 10;
+            numero /= 10;
+        }
+        System.out.println("El inverso es " + inverso);
+    }
+}

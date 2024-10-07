@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class MaxMinArreglo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] numeros = new int[10];
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+
+        System.out.println("Ingrese 10 numeros enteros:");
+        for (int i = 0; i < 10; i++) {
+            while (!scanner.hasNextInt()) {
+                System.out.println("Invalid input. Please enter an integer value.");
+                scanner.next();
+            }
+            numeros[i] = scanner.nextInt();
+            if (numeros[i] > max) {
+                max = numeros[i];
+            }
+            if (numeros[i] < min) {
+                min = numeros[i];
+            }
+        }
+
+        scanner.close(); 
+
+
+        System.out.println("El numero maximo es: " + max);
+        System.out.println("El numero minimo es: " + min);
+    }
+}

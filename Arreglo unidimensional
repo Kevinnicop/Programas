@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class SumaArreglo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] numeros = new int[5];
+        int suma = 0;
+
+        System.out.println("Ingrese 5 numeros enteros:");
+        for (int i = 0; i < 5; i++) {
+            numeros[i] = scanner.nextInt();
+            suma += numeros[i];
+        }
+
+        System.out.println("La suma de los numeros es: " + suma);
+        scanner.close(); 
+    }
+}
